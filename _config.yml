@@ -25,7 +25,7 @@ name: "Steffen Karcher"
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website and blog from Steffen Karcher
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://steffenkarcher.de" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.steffenkarcher.de" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  redwildrider
 breadcrumbs: true  # disabled by default
 author_profile: true
@@ -53,12 +53,12 @@ defaults:
 author:
   name             : "Steffen Karcher"
   avatar           : "assets/profile.jpg"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "M.Sc. student @ Hochschule Darmstadt"
   location         : "Karlsruhe, Germany"
-  employer         :
-  email            :
-  github           : "academicpages"
-  linkedin         :
+  employer         : "https://hackentur.de"
+  email            : "steffen.karcher@gmail.com"
+  github           : "redwildrider"
+  linkedin         : "https://www.linkedin.com/in/steffen-karcher/"
 
 
 footer:
