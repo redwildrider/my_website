@@ -55,17 +55,16 @@ author:
   avatar           : "assets/profile.jpg"
   bio              : "M.Sc. student @ Hochschule Darmstadt"
   location         : "Karlsruhe, Germany"
-  employer         : "https://hackentur.de"
   email            : "steffen.karcher@gmail.com"
   github           : "redwildrider"
-  linkedin         : "https://www.linkedin.com/in/steffen-karcher/"
+  linkedin         : "steffen-karcher"
 
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
+      url: "https://github.com/redwildrider"
 
 # Build settings
 theme: minimal-mistakes-jekyll
