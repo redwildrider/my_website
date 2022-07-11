@@ -11,13 +11,15 @@ The challenge I had was the fact that there already are two huge repositories - 
 
 Therefore, the purpose of this blog entry was born - to improve the Flutter add-to-app documentation and lower the hurdle for you when you want to accomplish the same thing i did. You will learn to add FlutterViews to your Android app, connect them with the according Flutter code you wrote and finally establish communication between Flutter and Android code with the help of method channels.
 
-NOTE: the following tutorial is one way to do this. There are definitely other ways accomplish the task too. However, in my experience I find this to be the most promising one at the moment.
+NOTE: the following tutorial is one way to do this. There are definitely other ways to accomplish the task too. However, in my experience I find this to be the most promising one at the moment.
 
-## Android app
+## Integration of Flutter into the Android app
 
-## flutter app
+You can find the Android app [here](https://github.com/redwildrider/add_flutter_views_to_android/tree/main/android). It simply consists of one Activity and two Fragments. At the end of the tutorial, each fragment should show include a different FlutterView.
 
-## Integration of flutter
+In order to integrate your Flutter module into your Android project, simply follow the [official tutorial](https://docs.flutter.dev/development/add-to-app/android/project-setup). I prefer to use the manual Integration using *Option B - Depend on the module’s source code*.
+
+## Flutter app
 
 ## Adding FlutterView
 

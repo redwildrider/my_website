@@ -23,7 +23,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Steffen Karcher">
 <meta property="og:title" content="[WIP:] Adding multiple FlutterViews to Android app">
-<meta property="og:url" content="https://www.steffenkarcher.de/2022/07/07/adding-multiple-flutter-views-to-android-app.html">
+<meta property="og:url" content="http://localhost:4000/2022/07/07/adding-multiple-flutter-views-to-android-app.html">
 
 
   <meta property="og:description" content="Introduction  Last month, as a mobile developer at Nutrilize, I had to find a way to combine our iOS and Android app in order to simplify and speed up the development of new features in the future. In my opinion, Flutter clearly is the best option to accomplish this task nowadays. You only have one source code for basically all platforms you can think of, backed up by a great community, plenty of nice plugins and the dart programming language, which I really enjoy working with.">
@@ -41,7 +41,7 @@
 
 
 
-<link rel="canonical" href="https://www.steffenkarcher.de/2022/07/07/adding-multiple-flutter-views-to-android-app.html">
+<link rel="canonical" href="http://localhost:4000/2022/07/07/adding-multiple-flutter-views-to-android-app.html">
 
 
 
@@ -52,7 +52,7 @@
     
       "@type": "Person",
       "name": "Steffen Karcher",
-      "url": "https://www.steffenkarcher.de/"
+      "url": "http://localhost:4000/"
     
   }
 </script>
@@ -118,6 +118,11 @@
         </a>
         <ul class="visible-links"></ul>
         
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
           <div class="navicon"></div>
@@ -132,62 +137,6 @@
     <div class="initial-content">
       
 
-
-  
-    
-
-
-
-<nav class="breadcrumbs">
-  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-    
-    
-    
-      
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="https://www.steffenkarcher.de/" itemprop="item"><span itemprop="name">Home</span></a>
-          <meta itemprop="position" content="1" />
-        </li>
-        <span class="sep">/</span>
-      
-      
-        
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/2022" itemprop="item"><span itemprop="name">2022</span></a>
-          <meta itemprop="position" content="2" />
-        </li>
-        <span class="sep">/</span>
-      
-    
-      
-      
-        
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/07" itemprop="item"><span itemprop="name">07</span></a>
-          <meta itemprop="position" content="3" />
-        </li>
-        <span class="sep">/</span>
-      
-    
-      
-      
-        
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/07" itemprop="item"><span itemprop="name">07</span></a>
-          <meta itemprop="position" content="4" />
-        </li>
-        <span class="sep">/</span>
-      
-    
-      
-      
-        <li class="current">[WIP:] Adding multiple FlutterViews to Android app</li>
-      
-    
-  </ol>
-</nav>
-
-  
 
 
 <div id="main" role="main">
@@ -324,9 +273,11 @@
 
 <p>Therefore, the purpose of this blog entry was born - to improve the Flutter add-to-app documentation and lower the hurdle for you when you want to accomplish the same thing i did. You will learn to add FlutterViews to your Android app, connect them with the according Flutter code you wrote and finally establish communication between Flutter and Android code with the help of method channels.</p>
 
-<p>NOTE: the following tutorial is one way to do this. There are definitely other ways accomplish the task too. However, in my experience I find this to be the most promising one at the moment.</p>
+<p>NOTE: the following tutorial is one way to do this. There are definitely other ways to accomplish the task too. However, in my experience I find this to be the most promising one at the moment.</p>
 
 <h2 id="android-app">Android app</h2>
+
+<p>You can find the Android app under…</p>
 
 <h2 id="flutter-app">flutter app</h2>
 
@@ -408,6 +359,17 @@ Last month, as a mobile developer at Nutrilize, I had to find a way to combine o
     </div>
 
     
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
 
     <div id="footer" class="page__footer">
       <footer>
@@ -442,6 +404,10 @@ Last month, as a mobile developer at Nutrilize, I had to find a way to combine o
 
 
 
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
 
 
 

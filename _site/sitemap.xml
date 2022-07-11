@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://www.steffenkarcher.de/2022/07/07/adding-multiple-flutter-views-to-android-app.html</loc>
+<loc>http://localhost:4000/2022/07/07/adding-multiple-flutter-views-to-android-app.html</loc>
 <lastmod>2022-07-07T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>https://www.steffenkarcher.de/</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 </urlset>
