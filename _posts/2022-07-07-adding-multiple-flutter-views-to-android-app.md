@@ -1,9 +1,7 @@
 ---
 layout: posts
-title:  "Adding multiple FlutterViews to Android app"
+title:  "[WIP:] Adding multiple FlutterViews to Android app"
 ---
-
-# [WIP:] Adding multiple FlutterViews to Android app
 
 ## Introduction
 <!-- TODO: maybe add TL;DR paragraph -->
